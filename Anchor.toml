@@ -1,0 +1,15 @@
+[features]
+seeds = false
+skip-lint = false
+[programs.devnet]
+public_posts_anchor = "DxDyTMXpy3LQ4XfsoP44fBY4EyAUYhEdycedwPjbo4ay"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "devnet"
+wallet = "/home/aldin/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
